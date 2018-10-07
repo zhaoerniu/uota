@@ -1,0 +1,98 @@
+/* Headroom.js */
+.headroom {
+  will-change: transform;
+  transition: transform 200ms linear;
+}
+.headroom--pinned {
+  transform: translateY(0%);
+}
+.headroom--unpinned {
+  transform: translateY(-100%);
+}
+.is-fixed-top {
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+/* owl-carousel */
+.owl-carousel {
+  margin-top: 52px;
+}
+
+/* timeline */
+.timeline-item {
+  padding: 3em 2em 2em;
+  position: relative;
+  color: rgba(0, 0, 0, 0.7);
+  border-left: 2px solid rgba(0, 0, 0, 0.3);
+}
+.timeline-item p {
+  font-size: 0.875rem;
+}
+.timeline-item::before {
+  content: attr(date-is);
+  position: absolute;
+  left: 2em;
+  font-weight: bold;
+  top: .35em;
+  display: block;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.timeline-item::after {
+  width: 10px;
+  height: 10px;
+  display: block;
+  top: 1em;
+  position: absolute;
+  left: -6px;
+  border-radius: 10px;
+  content: '';
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background: white;
+}
+.timeline-item:last-child {
+  -o-border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, transparent) 1 100%;
+     border-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3) 60%, transparent) 1 100%;
+     border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, transparent) 1 100%;
+}
+
+/* 了解有它焦点图 */
+.understand {
+  background: url('../images/understand.jpg') no-repeat center;
+  background-size: cover;
+}
+.affiliate {
+  background: url('../images/affiliate.jpg') no-repeat center;
+  background-size: cover;
+}
+.join {
+  background: url('../images/join.jpg') no-repeat center;
+  background-size: cover;
+}
+
+
+.focus {
+  background: rgba(0, 0, 0, .6);
+}
+
+/* 产品副标题 */
+.sub-title {
+  display: inline-block;
+  border-left: 2px solid #CE171F;
+  background: rgba(0, 0, 0, .1);
+  padding: 2px 8px;
+}
+
+.hero {
+  margin-top: 52px;
+}
+
+.title-click {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 14px;
+  margin: 140px 0 0 0;
+}
